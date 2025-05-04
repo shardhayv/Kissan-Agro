@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /uploads/admin/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Allow all images to be indexed
+Allow: /assets/images/
+Allow: /uploads/
+
+# Important pages with local keywords (Khairba Mill, Anubhav Aata, Batohi Sir)
+Allow: /about.php
+Allow: /products.php
+
+# Sitemap location
+Sitemap: https://shardhayvatshyayan.com/sitemap.xml

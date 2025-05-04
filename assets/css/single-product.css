@@ -1,0 +1,96 @@
+/* Single Product Styles */
+.product-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-image img {
+    transition: all 0.5s ease;
+}
+
+.product-image:hover img {
+    transform: scale(1.03);
+}
+
+.product-details h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.product-details h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.product-details .price {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 25px 0;
+    display: block;
+    position: relative;
+    padding-left: 15px;
+}
+
+.product-details .price:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.product-details .description {
+    background-color: rgba(78, 125, 52, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.product-details .btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-details .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-details .quantity-input {
+    border-radius: 20px;
+    border: 2px solid rgba(78, 125, 52, 0.2);
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.related-products-section {
+    background-color: rgba(78, 125, 52, 0.05);
+    padding: 40px 0;
+    margin-top: 50px;
+    border-radius: 15px;
+}
